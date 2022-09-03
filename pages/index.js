@@ -11,6 +11,12 @@ const sizeOf = require('image-size')
 import Head from 'next/head'
 
 
+// 04 My Styles
+import styles from '../components/global/xNextImage.module.scss'
+
+
+
+
 
 export default function Home( {photos} ) {
   return (
@@ -18,26 +24,29 @@ export default function Home( {photos} ) {
       <Head>
         <title>Nancy Webb</title>
       </Head>
+{/* 
+      <h1>Nancy Webb LOL</h1> */}
 
-      <h1>Nancy Webb LOL</h1>
-
-      <main className={`section sectionDefault`}>
+      <main className={`   `}>
       <div className={`wrapper`}> 
-      <div className={`letterbox_64_128`}>
+      <div className={`  letterbox_64_128 `}>
       
       
-          <div className={`tilesContainer textAlignCenter`}>
+          <div className={`textAlignCenter`}>
 
 
           
               {photos.map((i, index) => (
+                <div className={`${styles.nextImageDiv} ${styles.BorderMargin_6} `}>
+                  <NextImage
+                    src={`/photos/${i.photo_filename}`}  
+                    width={i.dimensions.width}
+                    height={i.dimensions.height}
+                    key={index}
+                  />
+                  {/* <figcaption>Yolo</figcaption> */}
+                </div>
 
-                <NextImage
-                  src={`/photos/${i.photo_filename}`}  
-                  width={i.dimensions.width}
-                  height={i.dimensions.height}
-                  key={index}
-                />
 
               ))}
           

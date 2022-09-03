@@ -1,0 +1,19 @@
+@import "../../styles/abstracts/variables";
+
+
+
+.nextImageDiv {
+    display: inline-block;
+  
+    // small spacing issue
+    vertical-align: bottom;
+    line-height: 0;
+  
+
+
+  }
+
+
+  .BorderMargin_6 {
+    margin: $grid-spacing-6;
+  }

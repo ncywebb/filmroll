@@ -1,0 +1,37 @@
+
+
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  
+
+}
+
+
+.textAlignCenter {
+    text-align: center;
+}
+
+
+
+.letterbox {
+    &_48 {
+        padding-top: $grid-spacing-48;
+        padding-bottom: $grid-spacing-48;
+    }
+
+    &_64 {
+        padding-top: $grid-spacing-64;
+        padding-bottom: $grid-spacing-64;
+    }
+
+    &_64_128 {
+        padding-top: $grid-spacing-64;
+        padding-bottom: $grid-spacing-128;
+    }
+
+    &_0_128 {
+        padding-bottom: $grid-spacing-128;
+    }
+}

@@ -1,0 +1,10 @@
+
+
+// @function rem($size: 0px) {
+//     @return calc(#{$size} * 0.1 * 0.625rem);
+// }
+// #{ } is called string interpolation in sass
+
+@function rem($size: 0px) {
+    @return calc(#{   $size * 0.1 * 0.625rem   });
+}
