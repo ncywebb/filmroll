@@ -37,12 +37,12 @@ export default function Home( {photos} ) {
 
           
               {photos.map((i, index) => (
-                <div className={`${styles.nextImageDiv} ${styles.BorderMargin_6} `}>
+                <div className={`${styles.nextImageDiv} ${styles.BorderMargin_6} `} key={index}>
                   <NextImage
                     src={`/photos/${i.photo_filename}`}  
                     width={i.dimensions.width}
                     height={i.dimensions.height}
-                    key={index}
+
                   />
                   {/* <figcaption>Yolo</figcaption> */}
                 </div>
